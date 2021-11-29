@@ -49,7 +49,7 @@ ul {
 }
 
 .Wrapper {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +59,7 @@ ul {
 }
 
 .headerWrapper {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -127,7 +127,7 @@ ul {
 }
 
 .mainWrapper {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -152,7 +152,7 @@ ul {
 }
 
 .section1 {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,9 +167,11 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 30px;
 }
 
 .card {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,7 +198,7 @@ ul {
 }
 
 .section2 {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -291,12 +293,22 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  background-image: url("/images/sectionOne.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.section3container {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  background-image: url("/images/progress.svg");
-  background-repeat: no-repeat;
-  background-size: 800px 600px;
-  background-position: 300px 0;
 }
 
 .section3Content {
@@ -311,14 +323,24 @@ ul {
 
 .section4 {
   width: 100%;
-  height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/section4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0;
+}
+
+.section4Container {
+  width: 90%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   gap: 30px;
-  background-image: url(/images/dev.svg);
-  background-repeat: no-repeat;
 }
 
 .section4Content {
@@ -335,7 +357,7 @@ ul {
 }
 
 .section7 {
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -354,6 +376,23 @@ ul {
 
 .textWrapper h2 {
   font-size: 30px;
+}
+
+.addressWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.mailWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.mailWrapper img {
+  width: 30px;
 }
 
 @media (max-width: 600px) {
