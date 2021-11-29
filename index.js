@@ -16,7 +16,25 @@ const cardItems = [
 const date = new Date();
 const year = date.getFullYear();
 
-window.onload = function () {
+const nav = document.querySelector(".navWrapper");
+const btnMenu = document.querySelector(".btnMenu");
+const btnClose = document.querySelector(".closeBtn");
+
+btnMenu.addEventListener("click", () => {
+  nav.classList.add("navWrapperMobileActive");
+  setTimeout(() => {
+    nav.classList.add("navWrapperMobileSlidIn");
+  }, 50);
+});
+
+btnClose.addEventListener("click", () => {
+  nav.classList.remove("navWrapperMobileSlidIn");
+  setTimeout(() => {
+    nav.classList.remove("navWrapperMobileActive");
+  }, 200);
+});
+
+window.onload = () => {
   let copyRight = document.querySelector(".copyright p");
   copyRight.innerHTML = `©${year} S&P Group`;
   let list = document.querySelectorAll(".cardItem");
