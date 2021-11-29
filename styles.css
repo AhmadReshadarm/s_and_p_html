@@ -55,7 +55,6 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 35px 0;
-  gap: 50px;
 }
 
 .headerWrapper {
@@ -128,19 +127,26 @@ ul {
 
 .mainWrapper {
   width: 90%;
+  height: 65vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   font-size: 30px;
+  background-image: url(./images/box.png);
+  background-repeat: no-repeat;
+  background-size: 700px 550px;
+  background-position: 40vw;
 }
 .mainTextWrapper {
-  margin-top: 45px;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+.mainTextWrapper h1 {
+  width: 100%;
+  white-space: nowrap;
 }
 .placeHolder {
   width: 100%;
