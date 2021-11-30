@@ -447,6 +447,10 @@ ul {
   align-items: flex-start;
   gap: 8px;
 }
+
+.addressWrapper a:hover {
+  color: #ff298b;
+}
 .mailWrapper {
   display: flex;
   flex-direction: row;
