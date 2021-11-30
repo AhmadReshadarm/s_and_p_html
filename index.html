@@ -10,11 +10,9 @@
 <body>
           <div class="container">
         <div class="Wrapper">
-          <header class="headerWrapper">
+          <header id="back_to_top" class="headerWrapper">
               <a href="/">
-                <Image
-                  width="150"
-                  height="90"
+                <img
                   src="./images/logo.png"
                   alt="logo"
                 />
@@ -22,51 +20,55 @@
             <ul
               class="navWrapper navWrapperMobileSlidOut"
             >
-              <li>
+              <li class="closeBtn">
                 <a
                   href="#sectionOne"
                 >
                   ОПИСАНИЕ МОДЕЛИ БИЗНЕСА
                 </a>
               </li>
-              <li>
+              <li class="closeBtn">
                 <a
                   href="#sectionTwo"
                 >
                   КОНКУРЕНТНАЯ СРЕДА
                 </a>
               </li>
-              <li>
+              <li class="closeBtn">
                 <a
                   href="#sectionThree"
                 >
                   КОНКУРЕНТНОЕ ПРЕИМУЩЕСТВО
                 </a>
               </li>
-              <li>
+              <li class="closeBtn">
                 <a
                   href="#sectionFour"
                 >
                   ЦИКЛ РАБОТЫ
                 </a>
               </li>
-              <li class="closeBtn">Закрыть</li>
+               <li class="closeBtn">
+                <a
+                  href="#sectionFive"
+                >
+                  КОНТАКТ
+                </a>
+              </li>
+              <li class="closeBtn closeBtnHide">Закрыть</li>
             </ul>
           <img src="./images/btnMenu.png" alt="menu button" class="btnMenu">
           </header>
           <div class="mainWrapper">
+            <div class="mainWrapperContainer">
             <div class="mainTextWrapper">
               <h1>S&P group</h1>
               <h1>Сбытовое подразделение</h1>
             </div>
-            <div class="placeHolder"></div>
-            <!-- <img
-              src="./images/box.png"
-              alt="hero"
-              class="heroImage"
-            /> -->
+            </div>
           </div>
           <div id="sectionOne" class="section1">
+            <div class="section1Container">
             <h2>ОПИСАНИЕ МОДЕЛИ БИЗНЕСА</h2>
             <div class="cardWrapper">
               <div class="card card1">
@@ -102,8 +104,10 @@
                 </ul>
               </div>
             </div>
+            </div>
           </div>
           <div id="sectionTwo" class="section2">
+            <div class="section2Container">
             <h2>КОНКУРЕНТНАЯ СРЕДА</h2>
             <div class="sectionWrapper">
               <div class="sectionContentWrapper">
@@ -206,6 +210,7 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
           <div id="sectionThree" class="section3" >
             <div class="section3container">
@@ -241,7 +246,7 @@
             </ul>
           </div>
           </div>
-          <footer class="section7">
+          <footer id="sectionFive" class="section7">
             <div class="textWrapper">
               <h2>Группа Компаний S&P group</h2>
              
@@ -271,6 +276,14 @@
             <p></p>
           </div>
         </div>
+      </div>
+     <div class="back-to-top">
+        <a title="Вернуться наверх" href="#back_to_top">
+          <img
+            src="./images/arrow_up.png"
+            alt="back to the top"
+          />
+        </a>
       </div>
 <script src="./index.js"></script>
 </body>

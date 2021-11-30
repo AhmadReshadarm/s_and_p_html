@@ -18,7 +18,8 @@ const year = date.getFullYear();
 
 const nav = document.querySelector(".navWrapper");
 const btnMenu = document.querySelector(".btnMenu");
-const btnClose = document.querySelector(".closeBtn");
+const btnClose = document.querySelectorAll(".closeBtn");
+const btnBackToTop = document.querySelector(".back-to-top");
 
 btnMenu.addEventListener("click", () => {
   nav.classList.add("navWrapperMobileActive");
@@ -27,11 +28,23 @@ btnMenu.addEventListener("click", () => {
   }, 50);
 });
 
-btnClose.addEventListener("click", () => {
-  nav.classList.remove("navWrapperMobileSlidIn");
-  setTimeout(() => {
-    nav.classList.remove("navWrapperMobileActive");
-  }, 200);
+for (let i = 0; i < btnClose.length; i++) {
+  btnClose[i].addEventListener("click", () => {
+    nav.classList.remove("navWrapperMobileSlidIn");
+    setTimeout(() => {
+      nav.classList.remove("navWrapperMobileActive");
+    }, 200);
+  });
+}
+
+// back to top on scroll
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 380) {
+    btnBackToTop.classList.add("back-to-top-active");
+  } else {
+    btnBackToTop.classList.remove("back-to-top-active");
+  }
 });
 
 window.onload = () => {

@@ -40,7 +40,7 @@ ul {
   display: none;
 }
 
-.closeBtn {
+.closeBtnHide {
   display: none;
 }
 
@@ -71,6 +71,10 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.headerWrapper a img {
+  width: 150px;
 }
 
 .logWrapper {
@@ -110,7 +114,7 @@ ul {
   gap: 25px;
 }
 
-.navWrapper li:nth-child(4) {
+.navWrapper li:nth-child(5) {
   margin-right: -30px;
 }
 
@@ -134,29 +138,45 @@ ul {
 }
 
 .mainWrapper {
-  width: 90%;
-  height: 65vh;
+  width: 100%;
+  height: 85vh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 30px;
-  background-image: url(./images/box.png);
+  background-image: url(./images/main.jpg);
   background-repeat: no-repeat;
-  background-size: 700px 550px;
-  background-position: 40vw;
+  background-size: 100% 100%;
 }
+
+.mainWrapperContainer {
+  width: 90%;
+  height: 85vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 22px;
+}
+
 .mainTextWrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.mainTextWrapper h1 {
   width: 100%;
-  white-space: nowrap;
+  text-align: center;
+  margin-top: 40px;
 }
-.placeHolder {
+
+.mainTextWrapper h1:nth-child(1) {
+  color: #ffc000;
+}
+
+.mainTextWrapper h1:nth-child(2) {
+  color: #fff;
+}
+
+.mainTextWrapper h1 {
   width: 100%;
 }
 
@@ -167,6 +187,17 @@ ul {
 }
 
 .section1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/section3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.section1Container {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -193,7 +224,7 @@ ul {
   align-items: self-start;
   gap: 20px;
   border-radius: 5px;
-  background: #fff;
+  background: #ffffff9c;
   padding: 20px;
   box-shadow: 0px 0px 4px 3px rgb(0 0 255 / 10%);
 }
@@ -213,6 +244,17 @@ ul {
 }
 
 .section2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/section3.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.section2Container {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -304,13 +346,11 @@ ul {
 
 .section3 {
   width: 100%;
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  background-image: url("/images/sectionOne.jpeg");
+  background-image: url("/images/section3.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0;
@@ -318,12 +358,16 @@ ul {
 
 .section3container {
   width: 90%;
-  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+  padding: 80px 0;
+}
+
+.section3container h2 {
+  color: #fff;
 }
 
 .section3Content {
@@ -332,8 +376,11 @@ ul {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  gap: 15px;
+  gap: 30px;
   font-size: 18px;
+  background: #ffffff91;
+  padding: 40px 20px;
+  border-radius: 10px;
 }
 
 .section4 {
@@ -342,7 +389,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/section4.jpeg);
+  background-image: url(/images/section4.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0;
@@ -350,12 +397,12 @@ ul {
 
 .section4Container {
   width: 90%;
-  height: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+  padding: 80px 0;
 }
 
 .section4Content {
@@ -364,10 +411,9 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-color: #fff;
-  opacity: 0.75;
+  background-color: #ffffff91;
   gap: 30px;
-  padding: 20px;
+  padding: 40px 20px;
   border-radius: 20px;
 }
 
@@ -386,7 +432,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: self-start;
+  align-items: flex-start;
+  gap: 35px;
 }
 
 .textWrapper h2 {
@@ -410,20 +457,52 @@ ul {
   width: 30px;
 }
 
+.back-to-top {
+  display: none;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  z-index: 4;
+  transition: 200ms;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.back-to-top-active {
+  display: block;
+}
+
+.back-to-top a img {
+  width: 45px;
+}
+
 @media (max-width: 600px) {
+  .Wrapper {
+    padding: 0;
+  }
   .navHideDesktop {
     display: flex;
+  }
+
+  .headerWrapper a img {
+    width: 120px;
   }
   .mobileNavActive {
     display: none;
   }
 
   .mainWrapper {
-    background-size: 350px;
-    background-position: 30px;
-    font-size: 12px;
+    background-size: 100% 100%;
     max-width: 100%;
-    height: 30vh;
+    height: 55vh;
+  }
+
+  .mainWrapperContainer {
+    height: 55vh;
+    font-size: 12px;
   }
 
   .mainTextWrapper {
@@ -431,16 +510,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-  }
-
-  .section1 {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
-    padding: 40px 0;
   }
 
   .section3Content {
