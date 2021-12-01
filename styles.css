@@ -483,7 +483,42 @@ ul {
   width: 45px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1370px) {
+  .navWrapper li a {
+    font-size: 1vw;
+  }
+  .fullHight {
+    height: 100vh;
+  }
+  h2 {
+    font-size: 2vw;
+    color: #fff;
+  }
+  .section4Container h2 {
+    color: black;
+  }
+
+  .textWrapper h2 {
+    color: black;
+  }
+  h3 {
+    font-size: 1.5vw;
+  }
+
+  li,
+  p,
+  a {
+    font-size: 1.6vw;
+  }
+}
+
+@media (max-width: 1030px) {
+  .navWrapper li:nth-child(5) {
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 768px) {
   .Wrapper {
     padding: 0;
   }
@@ -568,6 +603,7 @@ ul {
     height: 100%;
     z-index: 5;
     transition: 300ms;
+    white-space: nowrap;
   }
 
   .btnMenu {
