@@ -249,7 +249,7 @@ ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-image: url("./images/section3.jpg");
+  background-image: url("./images/section2.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -354,7 +354,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("/images/section3.jpg");
+  background-image: url("./images/section3.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0;
@@ -393,7 +393,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/images/section4.jpg);
+  background-image: url("./images/section4.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 0;
