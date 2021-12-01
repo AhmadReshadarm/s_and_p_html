@@ -318,6 +318,10 @@ ul {
   width: 100%;
   padding: 10px;
 }
+
+.contentLinksItems li a {
+  color: #2f5597;
+}
 .contentLinksItems li a:hover {
   cursor: pointer;
   color: #ff298b;
